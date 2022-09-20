@@ -27,6 +27,20 @@ boolean debounce(boolean last)
   return (current);
   
 }
+/*
+//디바운싱이 없는 함수로 만들어봄. 실행해보면 불안정하기때문에 버튼의 눌림을 제대로 인식하지 못하는걸 관측 가능하다.
+boolean debounce(boolean last)
+{
+  boolean current = digitalRead(button);
+  if (last != current)
+  {
+    current = digitalRead(button);
+    
+  }
+  return (current);
+  
+}
+*/
 
 
 void loop() {
